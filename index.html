@@ -4,94 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title img src="1.svg" alt="" >Mi_Portafolio</title>
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Mi_Portafolio</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <nav class="navegador">
-        <header class="titulo_principal">Welcome</header>
-        <samp class="logo"><a href="#">El B.B</a></samp>
+<div class="container_principal">
 
+<nav class="navbar">
+    <a href="#Home"></a>
+        <div >
+            <img class="hambur" src="/img/Íconos/menu.svg" alt="imagen">
+        </div>
         <ul class="menu">
-                <li><a href="#Inicio" class="idhi">Inicio</a></li>
-                <li><a href="#Descripcion"class="idhi">Descripcion</a></li>
-                <li><a href="#Habilidades"class="idhi">Habilidades</a></li>
-                <li><a href="#Informacion"class="idhi">Informacion</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="#Acerca">Acerca de Mi</a></li>
+                <li><a href="#Habilidades">Mis Habilidades</a></li>
+                <li><a href="#Portafolios">Mi Portafolio</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
         </ul>
-</nav> 
 
-<section id="Inicio" class="Inicio">
-    <div class="content_bg-Inicio"> </div>
-    <div class="box_img-Inicio">
-        <img src="./img/foto.jpg" width="270px" height="270px" alt="la foto">
+</nav>
+
+<section id="Home" class="Home"></section>
+    <div class="content_bg-home"></div>
+    <div id=Home class="title_foto">
+        <div class="box_img">
+        <img src="/img/Vectores/vec2.jpg" width="200px" height="200px"alt="imagen">
+        <img src="/img/foto.png" width="200px" height="200px" alt="imagen">
     </div>
-    <div class="box_info-Inicio">
-        <h1>Bryan Banguera <strong>Junior Developer Frontend</strong> </h1>
+    <div class="title">
+        <h2 class="title_name">Bryan Banguera <i>Developer front</i></h2>
     </div>
-</section>
-
-<main id="main">
-    <section id="Descripcion" class="Descripcion">
-<p>
-    futuro desarrollador wed full
-fd
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum dignissimos laboriosam at tempora commodi omnis architecto cumque hic dolore nesciunt non sequi, quia officiis molestiae aperiam in maxime reprehenderit voluptatum!
-
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt cumque magni in autem, tempore quo. Numquam, eos minus. Inventore adipisci harum sint tempore, vero ipsa magnam quas! Fugiat, temporibus harum?
-</p> 
-</section>
+    </div>
 
 <section id="Habilidades" class="Habilidades">
-    <h2 class="titlehabi">Mis skills-habilidades</h2>
-    <i class='bx bxl-html5'></i>
-    <i class='bx bxl-css3'></i>
-    <i class='bx bxl-javascript'></i>
     <div>
-    <svg class="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"/></svg>
+        <h2 class="titlehabi">Mis Habilidades</h2>
     </div>
     <div>
-    <svg class="b" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z"/></svg>
-    </div>
-    <div>
-    <svg class="c" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z"/></svg>
+        <i class='bx bxl-html5' id="html" width="270px"></i>
+        <i class='bx bxl-css3' id="css3"></i>
+        <i class='bx bxl-javascript' id="js"></i>
     </div>
 </section>
 
-<section id="Informacion" class="Informacion">
-    <h3>Informacion</h3>
-    <form action="submit">
-        <div class="form-group">
-            <div class="infobox">
+<section id="Acerca" class="Acerca">
+    <div>
+        <h2 class="titleAcer">Acerca de mi</h2>
+        <p>
+            Jonven de 21 años estudiante de la carrera Ing. en Sistemas con conocimientos basicos en la programacion <strong>HTML-CSS-JavaScript</strong> ya que realize un curso de programacion con Academlo.
+        </p> 
+    </div>
+    <div class="igm">
+        <img src="./img/aiu.png"width="250px" height="200px" alt="image">
+        <img src="./img/logo_academlo.jpg" height="200px" alt="image">
+    </div>
+</section>
 
-                <div class="ne">
-                    <div class="box">
-                        <label for="">Nombre</label>
-                        <input type="text" placeholder="Ingresa tu nombre">
-                    </div>
-                    <div class="box">
-                        <label for="">Email</label>
-                        <input type="text" placeholder="Ingresa tu Email">
-                    </div>
+<section id="Servicios" class="Servicios">
+    <div class="servi">
+        <h2 class="title">Servicios</h2>
+    <p>Por el momento sevicos en los lenguajes HTML, CSS, JavaScript</p>
+    </div>
+</section>
+
+<section id="Portafolios" class="Portafolios">
+<h2>Mi Portafolio</h2>
+<div>
+    <img src="/img/Captura web_8-9-2022_64623_127.0.0.1.jpeg" width="300px" height="250px" alt="image">
+    <img src="/img/Vectores/ejemplo 2.png" alt="image">
+</div>
+</section>
+
+
+<section id="Contacto" class="Contacto">
+        <div class="contacto">
+        <h2>Contacto</h2>
+            <div class="conta">
+                <div>
+                    <img src="/img/Íconos/phone.svg" alt="imagen">
+                    <p>0989408924-0999291433</p>
+                
+                    <img src="/img/Íconos/mail.svg" alt="imagen">
+                    <p>bryanbanguera146@gmail.com</p>
                 </div>
-            
-                <div class="box-textarea">
-                <label for="">En que te puedo ayudar</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa tu comentario..."></textarea>
             </div>
         </div>
-        <input class="submit" type="submit" value="Enviar" >
-    </div>    
-        
-</form>
 </section>
-</main>
 
-
-<div class="footer">
-<footer>Pagina diseñada y programada por Bryan Banguera😎😉</footer>
+<footer>
+    Pagina diseñada y programada por Bryan Banguera😎😉
+</footer>
 </div>
+
+
+<script src="/main.js"></script>
 
 </body>
 </html>
