@@ -7,6 +7,7 @@
     --color4: #0b4e8c;
     --color5: #E5E5E5;
     --color6: #FFFFFF;
+    --z-index: 6000;
     font-size: 16px;
 }
 
@@ -18,62 +19,96 @@
 }
 
 body {
-    background: #ced8e0;
+    background: radial-gradient(at 8% 10px, #196e8b, #24a8ea55);
 }
 
 main {
-    width: 100%;
+    width: 80vw;
     max-width: 1000px;
+    padding-top: 100px;
     margin: auto;
     overflow: hidden;
     background: radial-gradient(at 8% 10px, #196e8b, #dbe6e1, #24a8ea55);
 }
 
 header {
+
     width: 100%;
+    background: radial-gradient(at 8% 10px, #196e8b, #24a8ea55);
+
 }
 
-header nav {
-    width: 1000%;
-    max-width:1000px ;
-    position: fixed;
-    left: 0px;
-}
+/* .navbar {
+    border: solid green;
+} */
 
-nav {
+.navbar {
+    width: 100%;
     background: radial-gradient(at 8% 10px, #124b9b, #1a2545 );
     height: 80px;
-    position: absolute;
+    margin: auto;
+    position: fixed;
+    z-index: var(--z-index);
 }
 
+.burgue_menu {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 100%;
+    position: fixed;
+    background: radial-gradient(at 8% 10px, #124b9b, #1a2545 );
+    flex-direction:column;
+    transform: translateX(-100%);
+
+}
+.activate {
+    transform: translateX(0%);
+}
 
 .menu_bar {
     display: none;
+    justify-content: space-between;
+
+}
+.menu_bar a {
+    text-decoration: none;
+    color: black;
+    background-color: White;
+    border: 1px black solid;
+    padding: 0.3rem;
+
+
+
 }
 
-header nav ul {
-    overflow: hidden;
+ul {
+    height: 80px;
     list-style: none;
+    line-height: 5rem;
+    
+    display: flex;
 }
 
-header nav ul li {
-    float: left;
-    padding: 3px;
-}
-
-header nav ul li a {
+li a {
     color: #FFFFFF;
     padding: 0px;
     display: block;
     text-decoration: none;
 }
 
-header nav ul li a:hover {
-    color: #0f633d;
+li a:hover {
+    color: #38c7da;
     cursor: pointer;
 }
 
 /* HOME */
+.Home {
+    width: 1000px;
+    gap: 10rem;
+}
+
+
 .title_foto {
     display: flex;
 }
@@ -87,7 +122,13 @@ header nav ul li a:hover {
 /* HABILIDADES */
 .Habilidades .titlehabi {
     color: var(--color3);
-    padding: ;
+    
+}
+.Habilidades .hcj {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-around;
+
 }
 .Habilidades {
     text-align: left;
@@ -115,24 +156,91 @@ header nav ul li a:hover {
     bottom: 0;
     border-radius: 30px;
 }
+/* MiPortalio */
 
-@media (max-width:750px) {
-    header nav {
-        width: 80%;
-        height: 100%;
-        margin: 0;
-        position: fixed;
+/* Contacto */
+.Contacto .conta {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background: radial-gradient(at 8% 10px, #124b9b, #1a2545 );
+    padding: 0.5rem;
+}
+
+@media (max-width: 749px) {
+    .menu {
+        display: none;
     }
 
-    header nav ul li {
-        display: block;
-        float: none;
-        border-bottom: 1px solid rgba(255, 255, 255, .8);
+    .title {
+        position: relative;
+        z-index: 5000;
     }
 
     .menu_bar {
-        display: block;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .menu_bar i {
+        height: 100%;
+        font-size: 70px;
+    }
+
+    .Acerca .igm {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media (min-width:750px) {
+    header {
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        
+        position: fixed;
+        z-index: 1500;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    li {
+        
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        
+        width: 80%;
+        margin: auto;
+        gap: 1rem;
+
+    }
+
+    .navbar {
         width: 100%;
+        
+    }
+
+    /* .menu_bar {
+        z-index: 1500;
+        width: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
         background: #ccc;
     }
 
@@ -154,7 +262,7 @@ header nav ul li a:hover {
         float: right;
         font-size: 40px;
 
-    }
+    } */
 }
 
 
