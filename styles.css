@@ -2,12 +2,11 @@
 
 :root {
     --color1: #1177ab;
-    --color2: #FF4F6F;
+    --color2: #1263d4;
     --color3: #1a2545;
     --color4: #0b4e8c;
     --color5: #E5E5E5;
     --color6: #FFFFFF;
-    
     font-size: 16px;
 }
 
@@ -16,31 +15,160 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'DynaPuff', cursive;
-    
 }
 
-ul {
-    list-style: none;
+body {
+    background: #ced8e0;
 }
-a {
-    text-decoration: none;
-    color: var(--color6);
-}
-.container_principal {
-    width: 80%;
+
+main {
+    width: 100%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
-
     background: radial-gradient(at 8% 10px, #196e8b, #dbe6e1, #24a8ea55);
 }
 
-.navbar {
-    background: radial-gradient(at 8% 10px, #0f1c2e, #14613e, #18042455);
-    height: 80px;
+header {
+    width: 100%;
 }
 
-.navbar ul {
+header nav {
+    width: 1000%;
+    max-width:1000px ;
+    position: fixed;
+    left: 0px;
+}
+
+nav {
+    background: radial-gradient(at 8% 10px, #124b9b, #1a2545 );
+    height: 80px;
+    position: absolute;
+}
+
+
+.menu_bar {
+    display: none;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li {
+    float: left;
+    padding: 3px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    padding: 0px;
+    display: block;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #0f633d;
+    cursor: pointer;
+}
+
+/* HOME */
+.title_foto {
+    display: flex;
+}
+.title {
+    text-align: center;
+    color: var(--color2);
+}
+.title i {
+    color: var(--color3);
+}
+/* HABILIDADES */
+.Habilidades .titlehabi {
+    color: var(--color3);
+    padding: ;
+}
+.Habilidades {
+    text-align: left;
+}
+.Habilidades .bxl-html5 {
+    color: #c84012;
+}
+.Habilidades .bxl-css3 {
+    color: #1273c8;
+}
+.Habilidades .bxl-javascript {
+    color: #cec514;
+}
+/* AcercaDeMi */
+.titleAcer {
+    color: #0f1c2e;
+}
+.SobreMi{
+    color: var(--color4);
+}
+.Acerca .igm {
+    display: flex;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    border-radius: 30px;
+}
+
+@media (max-width:750px) {
+    header nav {
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+    }
+
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .8);
+    }
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+
+    .menu_bar .menu {
+        display: block;
+        padding: 20px;
+        background: #024959;
+        color: #E5E5E5;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    }
+
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .navbar ul {
     float: right;
     margin-right: 20px;
 }
@@ -71,32 +199,32 @@ li a.active, li a:hover {
     margin-right: 40px;
     cursor: pointer;
     display: none;
-}
+} */
 
-#check {
+/* #check {
     display: none;
-}
+} */
 
 
-.Home {
+/* .Home {
     width: 70%;
     padding: 20px;
-}
+} */
 
-.Habilidades {
+/* .Habilidades {
     width: 70%;
     padding: 20px;
-}
+} */
 
-.Acerca {
+/* .Acerca {
     width: 70%;
     padding: 20px;
-}
+} */
 
-.Servicios {
+/* .Servicios {
     width: 70%;
     padding: 20px;
-}
+} */
 
 .box_img {
     width: 100%;
@@ -107,23 +235,12 @@ li a.active, li a:hover {
 .box_img img {
     position: absolute;
     bottom: 0;
-    border-radius: 7em; 
+    border-radius: 7em;
 }
 
-.Habilidades {
-    text-align: left;
-}
-.Habilidades .bxl-html5 {
-    color: #c84012;
-}
-.Habilidades .bxl-css3 {
-    color: #1273c8;
-}
-.Habilidades .bxl-javascript {
-    color: #cec514;
-}
 
-@media (min-width: 750px) {
+
+/* @media (min-width: 750px) {
     .navbar .hambur {
         display: block;
     }
@@ -138,7 +255,7 @@ li a.active, li a:hover {
         transition: all .5s;
     }
     .navbar ul li {
-        display: none;
+        display: block;
         margin: 5px 0;
         line-height: 30px;
     }
@@ -149,5 +266,5 @@ li a.active, li a:hover {
         background: none;
         color: var(--color3);
     }
-}
+} */
 

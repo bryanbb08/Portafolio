@@ -6,30 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi_Portafolio</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-<div class="container_principal">
 
-<nav class="navbar">
-    <a href="#Home"></a>
-        <div >
-            <img class="hambur" src="/img/Íconos/menu.svg" alt="imagen">
-        </div>
+<header>
+    
+            <a href="https://www.linkedin.com/in/bryan-banguera-003b93249/" target="_blank" class="logo">Bryan</a>
+            <div class="menu_bar">
+            <img href="#" class="hambur" src="/img/Íconos/menu.svg" alt="imagen">
+            </div>
+            <a href="#Home"></a>
+        
+        <nav >
+        
         <ul class="menu">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Servicios">Servicios</a></li>
-                <li><a href="#Acerca">Acerca de Mi</a></li>
-                <li><a href="#Habilidades">Mis Habilidades</a></li>
-                <li><a href="#Portafolios">Mi Portafolio</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="#Home" class="Home tendenciaGlobal" >Home</a></li>
+                <li><a href="#Acerca" class="Acerca tendenciaGlobal">Acerca de Mi</a></li>
+                <li><a href="#Habilidades" class="Habilidades tendenciaGlobal">Mis Habilidades</a></li>
+                <li><a href="#Portafolios" class="Portafolios tendenciaGlobal">Mi Portafolio</a></li>
+                <li><a href="#Contacto" class="Contacto tendenciaGlobal">Contacto</a></li>
         </ul>
+    </nav>
+</header>
 
-</nav>
-
-<section id="Home" class="Home"></section>
+<main>
+    <section id="Home" class="Home"></section>
     <div class="content_bg-home"></div>
     <div id=Home class="title_foto">
         <div class="box_img">
@@ -40,6 +43,8 @@
         <h2 class="title_name">Bryan Banguera <i>Developer front</i></h2>
     </div>
     </div>
+
+
 
 <section id="Habilidades" class="Habilidades">
     <div>
@@ -53,7 +58,7 @@
 </section>
 
 <section id="Acerca" class="Acerca">
-    <div>
+    <div class="SobreMi">
         <h2 class="titleAcer">Acerca de mi</h2>
         <p>
             Jonven de 21 años estudiante de la carrera Ing. en Sistemas con conocimientos basicos en la programacion <strong>HTML-CSS-JavaScript</strong> ya que realize un curso de programacion con Academlo.
@@ -62,13 +67,6 @@
     <div class="igm">
         <img src="./img/aiu.png"width="250px" height="200px" alt="image">
         <img src="./img/logo_academlo.jpg" height="200px" alt="image">
-    </div>
-</section>
-
-<section id="Servicios" class="Servicios">
-    <div class="servi">
-        <h2 class="title">Servicios</h2>
-    <p>Por el momento sevicos en los lenguajes HTML, CSS, JavaScript</p>
     </div>
 </section>
 
@@ -96,12 +94,20 @@
         </div>
 </section>
 
+</main>
+
+
+
 <footer>
     Pagina diseñada y programada por Bryan Banguera😎😉
 </footer>
 </div>
 
-<script src="/main.js"></script>
+
+<script src="https://code.jquery.com/"></script>
+<script src="/agg.js"></script>
+
+<!-- <script src="/main.js"></script> -->
 
 </body>
 </html>
