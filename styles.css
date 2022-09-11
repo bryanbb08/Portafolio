@@ -2,7 +2,7 @@
 
 :root {
     --color1: #1177ab;
-    --color2: #1263d4;
+    --color2: #3a5273;
     --color3: #1a2545;
     --color4: #0b4e8c;
     --color5: #E5E5E5;
@@ -295,7 +295,7 @@ footer {
     /* HOME */
     .title {
         text-align: center;
-        color: var(--color2);
+        color: var(--color4);
         font-size: 3vw;
     }
     .title_foto {
@@ -313,12 +313,15 @@ footer {
         border-radius: 30px;
         justify-content: space-evenly;
     }
+    .img_porta img {
+        width: 1000px;
+    }
     .titleAcer {
         color: #0f1c2e;
         font-size: 5vw;
     }
     .SobreMi p {
-        color: var(--color2);
+        color: var(--color4);
         font-size: 3vw;
     }
 
@@ -351,6 +354,18 @@ footer {
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
+        font-size: 100px;
+    }
+    .conta p {
+        font-size: 2vw;
+    }
+    .Contacto .conta {
+        display: grid;
+        flex-direction: row;
+        justify-items: center;
+    }
+    .Contacto .conta i {
+        font-size: 90px;
     }
 
     footer {
