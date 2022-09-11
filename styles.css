@@ -175,6 +175,9 @@ li a:hover {
     color: var(--color3);
 }
 
+.Portafolios .img_porta {
+    display: grid;
+}
 /* Contacto */
 .Contacto {
     color: var(--color3);
@@ -206,8 +209,12 @@ footer {
     padding: 0.5rem;
     text-align: center;
 }
-
+/* paramovil🤳 */
 @media (max-width: 749px) {
+    .title_foto {
+        display: flex;
+        align-items: center;
+    }
     .menu {
         display: none;
     }
@@ -230,10 +237,32 @@ footer {
 
     .Acerca .igm {
         display: flex;
-        flex-direction: column;
-    }
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        border-radius: 30px;
+        justify-content: center;
+        gap: 10px;
+        
 }
 
+.Habilidades .hcj {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.Portafolios .img_porta {
+    display: flex;
+    justify-items: end;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 15px;
+}
+}
+/* desde aqui para ordenador💻  */
 @media (min-width:750px) {
     header {
         width: 100vw;
@@ -250,11 +279,11 @@ footer {
         justify-content: flex-end;
         align-items: flex-end;
     }
-    
     .menu {
         display: flex;
-        justify-content: flex-end;
-        width: 80%;
+        justify-content: space-evenly;
+        width: 100%;
+        font-size: 2vw;
         margin: auto;
         gap: 1rem;
     }
@@ -263,6 +292,73 @@ footer {
         width: 100%;
     }
 
+    /* HOME */
+    .title {
+        text-align: center;
+        color: var(--color2);
+        font-size: 3vw;
+    }
+    .title_foto {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    /* Acerca */
+
+    .Acerca .igm {
+        display: flex;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        border-radius: 30px;
+        justify-content: space-evenly;
+    }
+    .titleAcer {
+        color: #0f1c2e;
+        font-size: 5vw;
+    }
+    .SobreMi p {
+        color: var(--color2);
+        font-size: 3vw;
+    }
+
+/* Habilidades */
+    .Habilidades .hcj {
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Habilidades .titlehabi {
+        color: var(--color3);
+        font-size: 5vw;
+    }
+
+/* POrtafio */
+.ttlePortafolio {
+    color: var(--color3);
+    font-size: 5vw;
+}
+    .Portafolios .img_porta {
+        display: flex;
+        justify-content: space-around;
+    }
+/* Contacto */
+    .Contacto .contacto h2 {
+        font-size: 5vw;
+    }
+    .Contacto .conta {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    footer {
+        background: radial-gradient(at 8% 10px, #124b9b, #1a2545 );
+        padding: 3rem;
+        text-align: center;
+        font-size: 3vw;
+    }
 }
 
 
