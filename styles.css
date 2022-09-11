@@ -51,6 +51,18 @@ header {
     z-index: var(--z-index);
 }
 
+.box_img {
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+}
+
+.box_img img {
+    position: absolute;
+    bottom: 0;
+    border-radius: 7em;
+}
+
 .burgue_menu {
     display: flex;
     align-items: center;
@@ -69,17 +81,17 @@ header {
 .menu_bar {
     display: none;
     justify-content: space-between;
-
+}
+.menu_bar .logo {
+    cursor: pointer;
 }
 .menu_bar a {
     text-decoration: none;
-    color: black;
-    background-color: White;
-    border: 1px black solid;
+    color: var(--color3);
+    background: radial-gradient(at 80% 100px, #196e8b, #dbe6e1, #24a8ea55);
+    
     padding: 0.3rem;
-
-
-
+    cursor: pointer;
 }
 
 ul {
@@ -128,8 +140,10 @@ li a:hover {
     font-size: 50px;
     display: flex;
     justify-content: space-around;
-
 }
+
+
+
 .Habilidades {
     text-align: left;
 }
@@ -157,18 +171,40 @@ li a:hover {
     border-radius: 30px;
 }
 /* MiPortalio */
+.ttlePortafolio {
+    color: var(--color3);
+}
 
 /* Contacto */
+.Contacto {
+    color: var(--color3);
+}
 .Contacto .conta {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
+.conta a {
+    text-decoration: none;
+    color: var(--color3);
+}
+.Contacto .conta {
+    
+    display: flex;
+    justify-content: space-around;
+}
 
+.Contacto .conta i {
+    font-size: 50px;
+    color: var(--color1);
+}
+
+/* Pie de pag. */
 footer {
     background: radial-gradient(at 8% 10px, #124b9b, #1a2545 );
     padding: 0.5rem;
+    text-align: center;
 }
 
 @media (max-width: 749px) {
@@ -195,7 +231,6 @@ footer {
     .Acerca .igm {
         display: flex;
         flex-direction: column;
-
     }
 }
 
@@ -209,10 +244,6 @@ footer {
         z-index: 1500;
     }
 
-    .logo {
-        width: 25%;
-    }
-
     li {
         
         display: flex;
@@ -223,19 +254,19 @@ footer {
     .menu {
         display: flex;
         justify-content: flex-end;
-        
         width: 80%;
         margin: auto;
         gap: 1rem;
-
     }
 
     .navbar {
         width: 100%;
-        
     }
 
-    /* .menu_bar {
+}
+
+
+/* .menu_bar {
         z-index: 1500;
         width: 100%;
         position: fixed;
@@ -263,17 +294,6 @@ footer {
         font-size: 40px;
 
     } */
-}
-
-
-
-
-
-
-
-
-
-
 
 
 /* .navbar ul {
@@ -334,7 +354,7 @@ li a.active, li a:hover {
     padding: 20px;
 } */
 
-.box_img {
+/* .box_img {
     width: 100%;
     min-height: 200px;
     position: relative;
@@ -344,7 +364,7 @@ li a.active, li a:hover {
     position: absolute;
     bottom: 0;
     border-radius: 7em;
-}
+} */
 
 
 
